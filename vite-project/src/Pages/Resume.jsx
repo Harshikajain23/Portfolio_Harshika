@@ -38,7 +38,7 @@ const Resume = () => {
           Download Resume
         </a>
 
-        <span onClick={() => navigate("/")} className="cursor-pointer text-white text-4xl size-6.5"> <XIcon/></span>
+        <span onClick={() => navigate("/")} className="cursor-pointer text-white hover:text-gray-300 text-4xl size-6.5"> <XIcon/></span>
 
         </div>
       </div>

@@ -1,0 +1,18 @@
+.dots {
+  display: inline-block;
+  width: 1.5em;          /* space for 3 dots */
+  text-align: left;
+}
+
+.dots::after {
+  content: "";
+  animation: dots 1.5s steps(3, end) infinite;
+}
+
+@keyframes dots {
+  0%   { content: ""; }
+  33%  { content: "."; }
+  66%  { content: ".."; }
+  100% { content: "..."; }
+}
+

@@ -8,13 +8,13 @@ const AnimatedImage = ({ className = "" }) => {
       alt="Harshika Jain"
       className="ml-[53px] w-[75%] w-[300px] h-[350px] mt-3 rounded-2xl object-cover border border-white shadow-2xl shadow-gray-500"
       initial={{
-        filter: "grayscale(100%)",
+        filter: "grayscale(0%)",
       }}
       animate={{
-        filter: ["grayscale(100%)", "grayscale(0%)", "grayscale(100%)"],
+        filter: ["grayscale(0%)", "grayscale(100%)", "grayscale(0%)"],
       }}
       transition={{
-        duration: 2000,     // very slow & elegant
+        duration: 15,     // very slow & elegant
         ease: "easeInOut",
         repeat: Infinity,
       }}

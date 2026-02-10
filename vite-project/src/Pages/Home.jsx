@@ -121,7 +121,7 @@ const Home = () => {
         </div>
 
         
-        <div className="  row-span-2 col-span-5 col-start-23 row-start-13  bg-neutral-900 p-6  rounded-md cursor-pointer  hover:bg-[#ce4f0f]">
+        <div onClick={() => navigate("/contact")} className="  row-span-2 col-span-5 col-start-23 row-start-13  bg-neutral-900 p-6  rounded-md cursor-pointer  hover:bg-[#ce4f0f]">
           <span className="font-semibold hover:font-extrabold font-inter uppercase tracking-[0.3em] inline-block text-xl text-center my-auto">
              Contact
         </span>
