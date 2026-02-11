@@ -49,19 +49,24 @@ const Home = () => {
   };
 
   return (
-    <div  onClick={handleClick} className="min-h-screen h-screen overflow-hidden bg-neutral-950 p-6 text-white text-center">
-     <div className="grid
-  auto-cols-[20px] sm:auto-cols-[24px] lg:auto-cols-[25px]
-  auto-rows-[20px] sm:auto-rows-[24px] lg:auto-rows-[25px]
-  gap-3 sm:gap-4">
+    <div  onClick={handleClick} className="min-h-screen h-screen overflow-x-hidden bg-neutral-950 p-6 text-white text-center">
+     <div className="  grid
+  grid-cols-1
+  gap-4
+  lg:auto-cols-[25px]
+  lg:auto-rows-[25px]">
 
        
         {/* Hero */}
 
-        <div className="grid col-span-30 row-span-12 col-start-1 row-start-1 text-[4rem] bg-neutral-900 p-6">
-        <div className="col-span-25 row-span-12 col-start-1 row-start-1">
+        <div className="grid grid-cols-1 col-span-1
+  lg:col-span-30
+  lg:row-span-12
+  lg:col-start-1
+  lg:row-start-1 text-2xl sm:text-2xl lg:text-[4rem] bg-neutral-900 p-6">
+        <div className="lg:col-span-25 lg:row-span-12 lg:col-start-1 lg:row-start-1">
           Hi! I'm Harshika Jain - a <br/>  <p
-      className="text-[4rem] font-semibold transition-colors duration-500"
+      className="text-2xl sm:text-2xl lg:text-[4rem]  font-semibold transition-colors duration-500"
       style={{ color }}
     >
       <Typewriter
@@ -84,8 +89,11 @@ const Home = () => {
         </div>
        
 
-        <div className="col-span-5 row-span-12 col-start-25 row-start-1">
-            <AnimatedImage className=''/>
+        <div className="col-span-1 lg:col-span-5 lg:row-span-12 lg:col-start-25 lg:row-start-1 lg:block col-span-1 flex justify-center items-center mt-6
+
+ 
+">
+            <AnimatedImage className='sm:hidden'/>
         </div>
 
         </div>
@@ -98,22 +106,33 @@ const Home = () => {
         
 
         {/* Skills */}
-        <div className="col-span-2 row-span-5 col-start-31 row-start-3 rounded-md bg-neutral-900 p-6 flex justify-center items-center cursor-pointer hover:bg-[#096670f7]  bg-[#dd0cdd8f]">
-             <span className="font-semibold font-inter uppercase tracking-[0.3em] inline-block -rotate-90 text-xl text-center my-auto hover:font-extrabold">
+        <div className=" col-span-1
+  rounded-md bg-neutral-900 p-6
+
+  lg:col-span-2
+  lg:row-span-5
+  lg:col-start-31
+  lg:row-start-3  bg-neutral-900 p-6 flex justify-center items-center cursor-pointer hover:bg-[#096670f7]  bg-[#dd0cdd8f]">
+             <span className="font-semibold font-inter uppercase tracking-[0.3em] inline-block lg:-rotate-90 text-xl text-center my-auto hover:font-extrabold">
              Skills
         </span>
         
         </div>
 
         {/* About */}
-        <div className="col-span-2 row-span-5 col-start-31 row-start-8 rounded-md bg-neutral-900 p-6 flex items-center justify-center cursor-pointer hover:bg-[#73086ef7]">
-          <span className="font-semibold font-inter uppercase tracking-[0.3em] inline-block -rotate-90 text-xl text-center my-auto hover:font-extrabold">
+        <div onClick={() => navigate("/about")} className=" col-span-1
+
+    lg:col-span-2
+    lg:row-span-5
+    lg:col-start-31
+    lg:row-start-8 rounded-md bg-neutral-900 p-6 flex items-center justify-center cursor-pointer hover:bg-[#73086ef7]">
+          <span className="font-semibold font-inter uppercase tracking-[0.3em] inline-block lg:-rotate-90 text-xl text-center my-auto hover:font-extrabold">
             About
         </span>
         </div>
 
         {/* Resume */}
-        <div onClick={() => navigate("/resume")} className=" row-span-2 col-span-5 col-start-18 row-start-13  bg-neutral-900 p-6 rounded-md cursor-pointer hover:bg-[#b4063af7]">
+        <div onClick={() => navigate("/resume")} className="col-span-1 lg:row-span-2 lg:col-span-5 lg:col-start-18 lg:row-start-13  bg-neutral-900 p-6 rounded-md cursor-pointer hover:bg-[#b4063af7]">
           <span className="font-semibold font-inter uppercase tracking-[0.3em] inline-block text-xl text-center my-auto hover:font-extrabold">
              Resume
 
@@ -121,7 +140,7 @@ const Home = () => {
         </div>
 
         
-        <div onClick={() => navigate("/contact")} className="  row-span-2 col-span-5 col-start-23 row-start-13  bg-neutral-900 p-6  rounded-md cursor-pointer  hover:bg-[#ce4f0f]">
+        <div onClick={() => navigate("/contact")} className=" col-span-1 lg:row-span-2 lg:col-span-5 lg:col-start-23 lg:row-start-13  bg-neutral-900 p-6  rounded-md cursor-pointer  hover:bg-[#ce4f0f]">
           <span className="font-semibold hover:font-extrabold font-inter uppercase tracking-[0.3em] inline-block text-xl text-center my-auto">
              Contact
         </span>
@@ -133,7 +152,7 @@ const Home = () => {
 
 
          {/* Project */}
-        <div className="font-inter col-span-5 row-span-2 col-start-28 row-start-13  rounded-md bg-neutral-900 p-6 cursor-pointer hover:bg-[#11a00e]">
+        <div className="font-inter lg:col-span-5 lg:row-span-2 lg:col-start-28 lg:row-start-13  rounded-md bg-neutral-900 p-6 cursor-pointer hover:bg-[#11a00e]">
           <span className="font-semibold font-inter uppercase tracking-[0.3em] inline-block  text-xl text-center my-auto hover:font-extrabold">
              Projects
         </span>
