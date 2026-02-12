@@ -89,11 +89,11 @@ const Home = () => {
         </div>
        
 
-        <div className="col-span-1 lg:col-span-5 lg:row-span-12 lg:col-start-25 lg:row-start-1 lg:block col-span-1 flex justify-center items-center mt-6
+        <div className="col-span-1 lg:col-span-5 lg:row-span-12 lg:col-start-25 lg:row-start-1 lg:block flex justify-center items-center mt-6
 
  
 ">
-            <AnimatedImage className='sm:hidden'/>
+            <AnimatedImage className=''/>
         </div>
 
         </div>
@@ -106,7 +106,7 @@ const Home = () => {
         
 
         {/* Skills */}
-        <div className=" col-span-1
+        <div onClick={() => navigate("/skills")} className=" col-span-1
   rounded-md bg-neutral-900 p-6
 
   lg:col-span-2

@@ -63,7 +63,7 @@ const About = () => {
 
       {/* Content */}
       <div className="relative z-10 h-full px-6">
-        <div className="mt-10 mb-10 ml-2 sm:ml-2 mr-2 sm:mr-2 lg:ml-15 lg:mr-15 w-70vw h-70vh border border-2 border-white sm:flex justify-center items-center">
+        <div className="mt-10 mb-10 ml-2 sm:ml-2 mr-2 sm:mr-2 lg:ml-15 lg:mr-15 w-70vw h-70vh border border-2 border-white sm:flex flex-col justify-center items-center">
         <h1 className="text-4xl sm:text-2xl mx-auto text-center font-semibold mt-6 mb-10">About Me</h1>
 
         <p className=" text-2xl sm:text-xl text-white ml-4 sm:ml-5 sm:mr-5 lg:ml-15 lg:mr-15 leading-relaxed">

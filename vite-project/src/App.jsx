@@ -5,6 +5,7 @@ import Resume from "./Pages/Resume";
 import Contact from "./Pages/Contact";
 import { Toaster } from "react-hot-toast";
 import About from "./Pages/About";
+import Skills from "./Pages/Skills";
 
 function App() {
   const location = useLocation();
@@ -19,6 +20,7 @@ function App() {
         <Route path="/resume" element={<Resume />} />
         <Route path="/contact" element={<Contact/>} />
         <Route path="/about" element={<About/>} />
+        <Route path="/skills" element={<Skills/>} />
       </Routes>
     </AnimatePresence>
     </>

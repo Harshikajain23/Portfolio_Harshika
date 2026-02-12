@@ -6,7 +6,7 @@ const AnimatedImage = ({ className = "" }) => {
     <motion.img
       src={profileImg}
       alt="Harshika Jain"
-      className="sm:ml-[50px] sm:hidden lg:ml-[53px] w-[75%] w-[20rem] h-[21rem] mt-5 rounded-2xl object-cover border border-white shadow-2xl shadow-gray-500"
+      className=" w-[20rem] h-[21rem] lg:w-[20rem] lg:h-[22rem] lg:mr-5 mt-5 lg:mt-[-20px] rounded-2xl object-cover border border-white shadow-2xl shadow-gray-500"
       initial={{
         filter: "grayscale(0%)",
       }}
