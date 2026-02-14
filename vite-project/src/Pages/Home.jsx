@@ -64,7 +64,7 @@ const Home = () => {
   lg:row-span-12
   lg:col-start-1
   lg:row-start-1 text-3xl sm:text-3xl lg:text-[4rem] bg-neutral-900 p-6">
-        <div className="lg:col-span-25 lg:row-span-12 lg:col-start-1 lg:row-start-1" >
+        <div className="lg:col-span-25 lg:row-span-12 lg:col-start-1 lg:row-start-1 whitespace-nowrap" >
           Hi! I'm Harshika Jain - a <br/>  <p
       className="text-3xl sm:text-3xl lg:text-[4rem]  font-semibold transition-colors duration-500 whitespace-nowrap"
       style={{ color }}
@@ -81,7 +81,11 @@ const Home = () => {
       />
     </p>
     <br/>
+    <div/>
+
+    <div className="lg:col-span-25 lg:row-span-12 lg:col-start-1 lg:row-start-1 " >
     Welcome to my portfolio.
+    </div>
 
      {bubbles.map((r, i) => (
           <BubbleBurst key={i} x={r.x} y={r.y} />
