@@ -152,7 +152,7 @@ const Home = () => {
 
 
          {/* Project */}
-        <div className="font-inter lg:col-span-5 lg:row-span-2 lg:col-start-28 lg:row-start-13  rounded-md bg-neutral-900 p-6 cursor-pointer hover:bg-[#11a00e]">
+        <div onClick={() => navigate("/projects")} className="font-inter lg:col-span-5 lg:row-span-2 lg:col-start-28 lg:row-start-13  rounded-md bg-neutral-900 p-6 cursor-pointer hover:bg-[#11a00e]">
           <span className="font-semibold font-inter uppercase tracking-[0.3em] inline-block  text-xl text-center my-auto hover:font-extrabold">
              Projects
         </span>
