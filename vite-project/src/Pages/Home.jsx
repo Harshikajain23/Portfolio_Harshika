@@ -63,10 +63,10 @@ const Home = () => {
   lg:col-span-30
   lg:row-span-12
   lg:col-start-1
-  lg:row-start-1 text-2xl sm:text-2xl lg:text-[4rem] bg-neutral-900 p-6">
-        <div className="lg:col-span-25 lg:row-span-12 lg:col-start-1 lg:row-start-1">
+  lg:row-start-1 text-3xl sm:text-3xl lg:text-[4rem] bg-neutral-900 p-6">
+        <div className="lg:col-span-25 lg:row-span-12 lg:col-start-1 lg:row-start-1" >
           Hi! I'm Harshika Jain - a <br/>  <p
-      className="text-2xl sm:text-2xl lg:text-[4rem]  font-semibold transition-colors duration-500"
+      className="text-3xl sm:text-3xl lg:text-[4rem]  font-semibold transition-colors duration-500 whitespace-nowrap"
       style={{ color }}
     >
       <Typewriter
