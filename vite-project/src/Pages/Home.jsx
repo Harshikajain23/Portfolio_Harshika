@@ -84,7 +84,7 @@ const Home = () => {
     <div/>
 
     <div className="lg:col-span-25 lg:row-span-12 lg:col-start-1 lg:row-start-1 " >
-    Welcome to my portfolio.
+    Welcome to my <span className="block lg:inline">portfolio.</span>
     </div>
 
      {bubbles.map((r, i) => (
