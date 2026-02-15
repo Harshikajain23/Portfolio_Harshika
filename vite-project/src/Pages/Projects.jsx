@@ -73,6 +73,7 @@ const Projects = () => {
   const miniProjects = [
     {
       title: "Anime Recommendation Website",
+      description: "A static website where I share my favorite anime and provide recommendations for others to explore.",
       tech: "React, Tailwind CSS",
       live: "https://anime-recommendation-react-hr8q.vercel.app",
       github: "https://github.com/Harshikajain23/Anime_recommendation_react.git",
@@ -80,6 +81,7 @@ const Projects = () => {
     },
     {
       title: "Password Generator",
+      description: "A web app that creates strong, random passwords with customizable length and character options.",
       tech: "HTML, CSS, JavaScript",
       live: "https://harshikajain23.github.io/Javascript-mini-project-1-Password-generator/",
       github: "https://github.com/yourusername/password-generator",
@@ -87,6 +89,7 @@ const Projects = () => {
     },
     {
       title: "Weather App",
+      description: "A responsive web app that shows real-time weather for any city using OpenWeatherMap API.",
       tech: "HTML, OpenWeatherMap API,CSS, Javascript",
       live: "https://harshikajain23.github.io/Javascript-mini-project-2-weather-app/",
       github: "https://github.com/yourusername/weather-app",
@@ -94,6 +97,7 @@ const Projects = () => {
     },
     {
       title: "Tic Tac Toe",
+      description: "A web game with an unbeatable AI opponent using the Minimax algorithm.",
       tech: "HTML, CSS, JavaScript, AI",
       live: "https://harshikajain23.github.io/Javascript-mini-project-3-tic-tac-toe/",
       github: "https://github.com/Harshikajain23/Javascript-mini-project-3-tic-tac-toe.git",
