@@ -31,7 +31,7 @@ const Resume = () => {
 
         
         <a
-          href="/Harshika-jain-2026.pdf"
+          href="/Harshika-Jain-Resume.pdf"
           download
           className="rounded-md bg-white text-black px-6 py-3 hover:bg-gray-300"
         >
@@ -45,7 +45,7 @@ const Resume = () => {
 
       {/* Fullscreen PDF preview */}
       <embed
-        src="/Harshika-jain-2026.pdf"
+        src="/Harshika-Jain-Resume.pdf"
         type="application/pdf"
         className="w-full h-[calc(100vh-100px)]" // full height minus header
       />
