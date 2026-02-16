@@ -111,32 +111,30 @@ const Home = () => {
 
         {/* Skills */}
         <div onClick={() => navigate("/skills")} className=" col-span-1
-  rounded-md bg-neutral-900 p-6
+  rounded-md bg-neutral-900
 
   lg:col-span-2
   lg:row-span-5
   lg:col-start-31
-  lg:row-start-3 p-6 flex justify-center items-center cursor-pointer hover:bg-[#096670f7] shadow-2xl shadow-black">
-             <span className="font-semibold font-inter uppercase tracking-[0.3em] inline-block lg:-rotate-90 text-xl text-center my-auto hover:font-extrabold">
+  lg:row-start-3 p-6 flex justify-center items-center cursor-pointer hover:bg-[#096670f7] shadow-2xl shadow-black order-2 md:order-1">
+             <span className="font-semibold  font-inter uppercase tracking-[0.3em] inline-block lg:-rotate-90 text-xl text-center my-auto hover:font-extrabold">
              Skills
         </span>
         
         </div>
 
         {/* About */}
-        <div onClick={() => navigate("/about")} className=" col-span-1
-
-    lg:col-span-2
+        <div onClick={() => navigate("/about")} className=" col-span-1 order-1 md:order-2 lg:col-span-2
     lg:row-span-5
     lg:col-start-31
     lg:row-start-8 rounded-md bg-neutral-900 p-6 flex items-center justify-center cursor-pointer hover:bg-[#73086ef7] shadow-2xl shadow-black ">
-          <span className="font-semibold font-inter uppercase tracking-[0.3em] inline-block lg:-rotate-90 text-xl text-center my-auto hover:font-extrabold">
+          <span className="font-semibold  font-inter uppercase tracking-[0.3em] inline-block lg:-rotate-90 text-xl text-center my-auto hover:font-extrabold">
             About
         </span>
         </div>
 
         {/* Resume */}
-        <div onClick={() => navigate("/resume")} className="col-span-1 lg:row-span-2 lg:col-span-5 lg:col-start-18 lg:row-start-13  bg-neutral-900 p-6 rounded-md cursor-pointer hover:bg-[#b4063af7] shadow-2xl shadow-black ">
+        <div onClick={() => navigate("/resume")} className="col-span-1 order-4 md:order-2 lg:row-span-2 lg:col-span-5 lg:col-start-18 lg:row-start-13  bg-neutral-900 p-6 rounded-md cursor-pointer hover:bg-[#b4063af7] shadow-2xl shadow-black ">
           <span className="font-semibold font-inter uppercase tracking-[0.3em] inline-block text-xl text-center my-auto hover:font-extrabold">
              Resume
 
@@ -144,7 +142,7 @@ const Home = () => {
         </div>
 
         
-        <div onClick={() => navigate("/contact")} className=" col-span-1 lg:row-span-2 lg:col-span-5 lg:col-start-23 lg:row-start-13  bg-neutral-900 p-6  rounded-md cursor-pointer  hover:bg-[#ce4f0f] shadow-2xl shadow-black ">
+        <div onClick={() => navigate("/contact")} className="order-5 md:order-3 col-span-1 lg:row-span-2 lg:col-span-5 lg:col-start-23 lg:row-start-13  bg-neutral-900 p-6  rounded-md cursor-pointer  hover:bg-[#ce4f0f] shadow-2xl shadow-black ">
           <span className="font-semibold hover:font-extrabold font-inter uppercase tracking-[0.3em] inline-block text-xl text-center my-auto">
              Contact
         </span>
@@ -156,7 +154,7 @@ const Home = () => {
 
 
          {/* Project */}
-        <div onClick={() => navigate("/projects")} className="font-inter lg:col-span-5 lg:row-span-2 lg:col-start-28 lg:row-start-13  rounded-md bg-neutral-900 p-6 cursor-pointer hover:bg-[#11a00e] shadow-2xl shadow-black ">
+        <div onClick={() => navigate("/projects")} className="font-inter order-3 md:order-4 lg:col-span-5 lg:row-span-2 lg:col-start-28 lg:row-start-13  rounded-md bg-neutral-900 p-6 cursor-pointer hover:bg-[#11a00e] shadow-2xl shadow-black ">
           <span className="font-semibold font-inter uppercase tracking-[0.3em] inline-block  text-xl text-center my-auto hover:font-extrabold">
              Projects
         </span>
