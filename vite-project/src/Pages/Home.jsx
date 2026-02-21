@@ -104,7 +104,7 @@ const Home = () => {
 
  
 ">
-            <AnimatedImage className=''/>
+            <AnimatedImage className='z-30'/>
         </div>
 
         </div>
