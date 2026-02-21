@@ -14,10 +14,10 @@ function App() {
 
   return (
     <div className="relative min-h-screen bg-black overflow-x-hidden">
-
       {/* Twinkling Stars Background */}
-      <div className="stars fixed inset-0 z-50 pointer-events-none"></div>
-      <div className="stars2 fixed inset-0 z-50 pointer-events-none"></div>
+      {/* Twinkling Stars Background */}
+      <div className="stars absolute top-0 left-0 w-screen h-screen pointer-events-none z-20"></div>
+      <div className="stars2 absolute top-0 left-0 w-screen h-screen pointer-events-none z-20"></div>
 
       {/* Main Content */}
       <div className="relative z-10">
