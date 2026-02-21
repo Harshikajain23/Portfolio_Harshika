@@ -6,6 +6,7 @@ import "../styles/dots.css";
 import { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
 import toast from "react-hot-toast";
+import Navbar from "./Navbar";
 
 const curtainVariants = {
   initial: { y: "100%" },
@@ -77,8 +78,10 @@ const Contact = () => {
   };
 
   return (
+    <>
+
     <motion.div
-      className="fixed inset-0 bg-neutral-950 text-white z-50 flex flex-col"
+      className="min-h-screen bg-neutral-950 text-white z-50 flex flex-col"
       variants={curtainVariants}
       initial="initial"
       animate="animate"
@@ -178,6 +181,7 @@ const Contact = () => {
         </a>
       </div>
     </motion.div>
+    </>
   );
 };
 

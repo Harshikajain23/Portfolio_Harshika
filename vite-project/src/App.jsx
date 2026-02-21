@@ -3,31 +3,40 @@ import { AnimatePresence } from "framer-motion";
 import Home from "./Pages/Home";
 import Resume from "./Pages/Resume";
 import Contact from "./Pages/Contact";
-import { Toaster } from "react-hot-toast";
 import About from "./Pages/About";
 import Skills from "./Pages/Skills";
 import Projects from "./Pages/Projects";
+import Navbar from "./Pages/Navbar";
+import { Toaster } from "react-hot-toast";
 
 function App() {
   const location = useLocation();
 
   return (
-     <>
-      <Toaster position="top-center" />
-    <AnimatePresence mode="wait">
-     
-      <Routes location={location} key={location.pathname}>
-        <Route path="/" element={<Home />} />
-        <Route path="/resume" element={<Resume />} />
-        <Route path="/contact" element={<Contact/>} />
-        <Route path="/about" element={<About/>} />
-        <Route path="/skills" element={<Skills/>} />
-        <Route path="/projects" element={<Projects/>} />
-      </Routes>
-    </AnimatePresence>
-    </>
+    <div className="relative min-h-screen bg-black overflow-x-hidden">
+
+      {/* Twinkling Stars Background */}
+      <div className="stars fixed inset-0 z-50 pointer-events-none"></div>
+      <div className="stars2 fixed inset-0 z-50 pointer-events-none"></div>
+
+      {/* Main Content */}
+      <div className="relative z-10">
+        <Toaster position="top-center" />
+        <Navbar />
+
+        <AnimatePresence mode="wait">
+          <Routes location={location} key={location.pathname}>
+            <Route path="/" element={<Home />} />
+            <Route path="/resume" element={<Resume />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/skills" element={<Skills />} />
+            <Route path="/projects" element={<Projects />} />
+          </Routes>
+        </AnimatePresence>
+      </div>
+    </div>
   );
 }
 
 export default App;
-

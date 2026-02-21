@@ -258,13 +258,13 @@ const shadowColors = [
             <>
               <button
                 onClick={() => handlePrevImage(globalIndex, project.images)}
-                className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-neutral-800 hover:bg-neutral-700 px-2 py-1 rounded text-white z-10 cursor-pointer"
+                className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-neutral-800 hover:bg-neutral-700 px-2 py-1 rounded text-white z-1 cursor-pointer"
               >
                 <ChevronLeft />
               </button>
               <button
                 onClick={() => handleNextImage(globalIndex, project.images)}
-                className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-neutral-800 hover:bg-neutral-700 px-2 py-1 rounded text-white z-10 cursor-pointer"
+                className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-neutral-800 hover:bg-neutral-700 px-2 py-1 rounded text-white z-1 cursor-pointer"
               >
                 <ChevronRight />
               </button>
@@ -277,7 +277,7 @@ const shadowColors = [
 
   return (
     <motion.div
-      className="fixed inset-0 bg-neutral-950 text-white z-50 flex flex-col items-center justify-start overflow-y-auto"
+      className="min-h-screen bg-neutral-950 text-white z-1 flex flex-col items-center justify-start overflow-y-auto"
       variants={curtainVariants}
       initial="initial"
       animate="animate"
