@@ -39,7 +39,7 @@ export default function Navbar({ navItems }) {
               key={index}
               to={item.path}
               onClick={() => setOpen(false)}
-              className="bg-neutral-900 ml-20 mr-20 border-4 border-black pl-35 flex items-center gap-3 px-4 py-4 text-lg uppercase"
+              className="bg-neutral-900 ml-20 mr-20 border-4 border-black flex items-center gap-3 px-4 py-4 text-lg uppercase"
             >
               {item.icon}
               <span>{item.name}</span>
