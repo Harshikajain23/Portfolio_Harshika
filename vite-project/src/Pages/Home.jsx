@@ -141,7 +141,7 @@ const Home = () => {
         </div>
 
         {/* Resume */}
-        <div onClick={() => navigate("/resume")} className="col-span-1 order-4 md:order-2 lg:row-span-2 lg:col-span-5 lg:col-start-18 lg:row-start-13  bg-neutral-900 p-6 rounded-md cursor-pointer hover:bg-[#b4063af7] shadow-2xl shadow-black hidden md:flex ">
+        <div onClick={() => navigate("/resume")} className="col-span-1 order-4 md:order-2 lg:row-span-2 lg:col-span-5 lg:col-start-18 lg:row-start-13  bg-neutral-900 p-6 rounded-md cursor-pointer hover:bg-[#b4063af7] shadow-2xl shadow-black hidden md:flex justify-center ">
           <span className="font-semibold font-inter uppercase tracking-[0.3em] inline-block text-xl text-center my-auto hover:font-extrabold">
              Resume
 
