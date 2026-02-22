@@ -21,16 +21,16 @@ function App() {
   return (
     <div className="relative min-h-screen bg-black">
       
-      {/* ⭐ Stars Background (ONLY when needed) */}
+      
       {!hideStars && (
         <>
-          <div className="stars fixed inset-0 pointer-events-none z-1"></div>
-          <div className="stars2 fixed inset-0 pointer-events-none z-1"></div>
+          <div className="stars fixed inset-0 pointer-events-none z-0"></div>
+          <div className="stars2 fixed inset-0 pointer-events-none z-0"></div>
         </>
       )}
 
       {/* Main Content */}
-      <div className="relative z-10">
+      <div className="relative z-40">
         <Toaster position="top-center" />
         <Navbar />
 
