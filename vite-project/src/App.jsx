@@ -24,8 +24,8 @@ function App() {
       {/* ⭐ Stars Background (ONLY when needed) */}
       {!hideStars && (
         <>
-          <div className="stars fixed inset-0 pointer-events-none z-10"></div>
-          <div className="stars2 fixed inset-0 pointer-events-none z-10"></div>
+          <div className="stars fixed inset-0 pointer-events-none z-1"></div>
+          <div className="stars2 fixed inset-0 pointer-events-none z-1"></div>
         </>
       )}
 
