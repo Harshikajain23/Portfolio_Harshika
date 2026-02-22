@@ -54,7 +54,7 @@ const Home = () => {
     <>
 
     
-    <div  onClick={handleClick} className=" min-h-screen h-screen overflow-x-hidden bg-neutral-950 p-6 text-white text-center">
+    <div  onClick={handleClick} className=" min-h-screen h-screen overflow-x-hidden bg-neutral-950 p-6 text-white text-center z-20">
 
      
      <div className="  grid

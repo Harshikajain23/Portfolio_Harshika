@@ -12,12 +12,22 @@ import { Toaster } from "react-hot-toast";
 function App() {
   const location = useLocation();
 
+  // Hide stars only on Home and Resume
+    const hideStars =
+      location.pathname === "/" ||
+      location.pathname === "/home" ||
+      location.pathname.startsWith("/resume");
+
   return (
-    <div className="relative min-h-screen bg-black overflow-x-hidden">
-      {/* Twinkling Stars Background */}
-      {/* Twinkling Stars Background */}
-      <div className="stars absolute top-0 left-0 w-screen h-screen pointer-events-none z-20"></div>
-      <div className="stars2 absolute top-0 left-0 w-screen h-screen pointer-events-none z-20"></div>
+    <div className="relative min-h-screen bg-black">
+      
+      {/* ⭐ Stars Background (ONLY when needed) */}
+      {!hideStars && (
+        <>
+          <div className="stars fixed inset-0 pointer-events-none z-10"></div>
+          <div className="stars2 fixed inset-0 pointer-events-none z-10"></div>
+        </>
+      )}
 
       {/* Main Content */}
       <div className="relative z-10">

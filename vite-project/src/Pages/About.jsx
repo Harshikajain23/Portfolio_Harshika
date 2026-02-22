@@ -42,6 +42,8 @@ const About = () => {
         ease: [0.77, 0, 0.175, 1],
       }}
     >
+
+      <div className=" stars stars-2"></div>
       {/* Clickable Bubble Background */}
       <div
         className="absolute inset-0 z-20"
@@ -88,6 +90,7 @@ const About = () => {
 
 
         </div>
+        
       </div>
     </motion.div>
   );

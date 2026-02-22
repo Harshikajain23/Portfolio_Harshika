@@ -95,7 +95,7 @@ const Skill = ({ name, img }) => (
       </button>
 
       {/* Content */}
-     
+     <div className=" stars stars-2"></div>
       <h1 className="text-4xl uppercase lg:text-4xl sm:text-2xl mx-auto text-center font-semibold mt-6 mb-18">
   Skills
 </h1>

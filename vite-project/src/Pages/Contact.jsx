@@ -105,6 +105,8 @@ const Contact = () => {
         <X size={28} />
       </button>
 
+      <div className=" stars stars-2"></div>
+
       {/* Heading */}
       <div className="mt-2 text-center">
         <h1 className="text-[3rem] font-semibold">Contact Me</h1>

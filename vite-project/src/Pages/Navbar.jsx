@@ -33,13 +33,15 @@ export default function Navbar({ navItems }) {
           <X size={28} onClick={() => setOpen(false)} className="cursor-pointer" />
         </div>
 
+        <div className=" stars stars-2"></div>
+
         <div className="grid grid-cols-1 gap-2  bg-black p-2 mt-6">
           {navLinks.map((item, index) => (
             <Link
               key={index}
               to={item.path}
               onClick={() => setOpen(false)}
-              className="bg-neutral-900 border-4 border-black pl-30 flex items-center gap-3 px-4 py-4 text-lg uppercase"
+              className="bg-neutral-900 border-4 border-black pl-35 flex items-center gap-3 px-4 py-4 text-lg uppercase"
             >
               {item.icon}
               <span>{item.name}</span>

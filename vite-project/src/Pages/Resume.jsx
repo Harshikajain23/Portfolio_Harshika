@@ -22,6 +22,7 @@ const Resume = () => {
     ease: [0.77, 0, 0.175, 1],
   }}
 >
+  
   <div className="w-full flex justify-between items-center p-6">
     <h1 className="text-4xl font-bold">My Resume</h1>
 

@@ -286,6 +286,8 @@ const shadowColors = [
         duration: 1.1,
         ease: [0.77, 0, 0.175, 1],
       }}
+
+      
     >
       <div className="w-full flex justify-center items-center p-6 relative">
         <button
@@ -296,6 +298,8 @@ const shadowColors = [
         </button>
         <h1 className="text-4xl lg:text-5xl font-bold mb-10 bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent uppercase">My Projects</h1>
       </div>
+
+      <div className=" stars stars-2"></div>
 
       <div className="flex flex-col gap-20 w-full max-w-6xl px-6">
         {/* Main Projects */}
