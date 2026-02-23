@@ -12,7 +12,7 @@ body {
 .stars-wrapper {
   position: fixed;
   inset: 0;
-  z-index: 20;
+  z-index: 0; /* keep behind content */
   pointer-events: none;
   overflow: hidden;
   background: #050509;
@@ -24,14 +24,13 @@ body {
   width: 100%;
   height: 100%;
   background-image:
-    radial-gradient(1px 1px at 10% 20%, #ffffff, transparent),
-    radial-gradient(1px 1px at 30% 80%, #ffffff, transparent),
-    radial-gradient(1px 1px at 50% 40%, #ffffff, transparent),
-    radial-gradient(1px 1px at 70% 60%, #ffffff, transparent),
-    radial-gradient(1px 1px at 90% 10%, #ffffff, transparent);
-  background-size: 400px 400px;
+    radial-gradient(1.8px 1.8px at 10% 20%, #ffffff, transparent),
+    radial-gradient(1.8px 1.8px at 30% 70%, #ffffff, transparent),
+    radial-gradient(1.8px 1.8px at 60% 40%, #ffffff, transparent),
+    radial-gradient(1.8px 1.8px at 80% 90%, #ffffff, transparent);
+  background-size: 300px 300px;
   opacity: 0.6;
-  animation: moveStars 120s linear infinite;
+  animation: moveUp 80s linear infinite;
 }
 
 /* ===== Medium Stars ===== */
@@ -40,29 +39,60 @@ body {
   width: 100%;
   height: 100%;
   background-image:
-    radial-gradient(2px 2px at 20% 30%, #ffffff, transparent),
-    radial-gradient(2px 2px at 60% 70%, #ffffff, transparent),
-    radial-gradient(2px 2px at 80% 40%, #ffffff, transparent);
-  background-size: 600px 600px;
+    radial-gradient(2px 2px at 25% 30%, #ffffff, transparent),
+    radial-gradient(2px 2px at 75% 60%, #ffffff, transparent);
+  background-size: 500px 500px;
   opacity: 0.4;
-  animation: moveStars 180s linear infinite;
+  animation: moveUp 120s linear infinite;
 }
 
-/* ===== Big Glow Stars ===== */
+/* ===== Large Stars ===== */
 .stars3 {
   position: absolute;
   width: 100%;
   height: 100%;
   background-image:
-    radial-gradient(3px 3px at 40% 50%, #ffffff, transparent),
-    radial-gradient(3px 3px at 75% 25%, #ffffff, transparent);
-  background-size: 800px 800px;
+    radial-gradient(3px 3px at 50% 50%, #ffffff, transparent);
+  background-size: 700px 700px;
   opacity: 0.3;
-  animation: moveStars 240s linear infinite;
+  animation: moveUp 180s linear infinite;
 }
 
-/* ===== Parallax Animation ===== */
-@keyframes moveStars {
+/* ===== Smooth Upward Movement ===== */
+@keyframes moveUp {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-50%);
+  }
+}
+
+/* ===== Navbar Moving Stars (Less Dense) ===== */
+.navbar-stars {
+  position: absolute;
+  top: -50%;
+  left: 0;
+  width: 100%;
+  height: 200%;
+  pointer-events: none;
+
+  background-image:
+    radial-gradient(1.4px 1.4px at 10% 25%, #ffffff, transparent),
+    radial-gradient(1.8px 1.8px at 30% 65%, #ffffff, transparent),
+    radial-gradient(1.2px 1.2px at 50% 40%, #ffffff, transparent),
+    radial-gradient(1.6px 1.6px at 70% 75%, #ffffff, transparent),
+    radial-gradient(1.3px 1.3px at 85% 35%, #ffffff, transparent),
+    radial-gradient(1.5px 1.5px at 95% 60%, #ffffff, transparent);
+
+  background-size: 180px 180px; /* increased spacing */
+  opacity: 0.4;
+
+  animation: navbarMoveUp 30s linear infinite;
+}
+
+/* ===== Smooth Continuous Movement ===== */
+@keyframes navbarMoveUp {
   from {
     transform: translateY(0);
   }

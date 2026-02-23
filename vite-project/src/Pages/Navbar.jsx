@@ -17,8 +17,11 @@ export default function Navbar({ navItems }) {
   return (
     <>
       {/* Top Bar */}
-      <nav className="fixed top-0 left-0 bg-transparent text-white px-6 py-4 flex justify-between items-center z-50 md:hidden">
-        <button className="z-50 text-white" onClick={() => setOpen(!open)}>
+      <nav className="fixed top-0 left-0 bg-transparent text-white px-6 py-4 flex justify-between items-center z-50 md:hidden overflow-hidden relative">
+
+          {/* ⭐ Navbar Stars */}
+  <div className="absolute inset-0 navbar-stars pointer-events-none"></div>
+        <button className="relative z-10 text-white" onClick={() => setOpen(!open)}>
           {open ? <X size={28} /> : <Menu size={28} />}
         </button>
       </nav>
@@ -29,6 +32,8 @@ export default function Navbar({ navItems }) {
           open ? "top-0" : "-top-full"
         }`}
       >
+          {/* ⭐ Stars Layer */}
+  <div className="absolute inset-0 navbar-stars pointer-events-none"></div>
         <div className="flex justify-start p-6">
           <X size={28} onClick={() => setOpen(false)} className="cursor-pointer" />
         </div>
