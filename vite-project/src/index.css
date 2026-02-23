@@ -21,8 +21,8 @@ body {
 /* ===== Small Stars ===== */
 .stars {
   position: absolute;
-  width: 200%;
-  height: 200%;
+  width: 100%;
+  height: 100%;
   background-image:
     radial-gradient(1px 1px at 10% 20%, #ffffff, transparent),
     radial-gradient(1px 1px at 30% 80%, #ffffff, transparent),
@@ -37,8 +37,8 @@ body {
 /* ===== Medium Stars ===== */
 .stars2 {
   position: absolute;
-  width: 200%;
-  height: 200%;
+  width: 100%;
+  height: 100%;
   background-image:
     radial-gradient(2px 2px at 20% 30%, #ffffff, transparent),
     radial-gradient(2px 2px at 60% 70%, #ffffff, transparent),
@@ -51,8 +51,8 @@ body {
 /* ===== Big Glow Stars ===== */
 .stars3 {
   position: absolute;
-  width: 200%;
-  height: 200%;
+  width: 100%;
+  height: 100%;
   background-image:
     radial-gradient(3px 3px at 40% 50%, #ffffff, transparent),
     radial-gradient(3px 3px at 75% 25%, #ffffff, transparent);
