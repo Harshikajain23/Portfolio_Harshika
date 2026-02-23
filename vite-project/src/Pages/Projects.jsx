@@ -277,7 +277,7 @@ const shadowColors = [
 
   return (
     <motion.div
-      className="min-h-screen bg-neutral-950 text-white z-1 flex flex-col items-center justify-start overflow-y-auto"
+      className="inset-0 min-h-screen bg-neutral-950 text-white z-1 flex flex-col items-center justify-start overflow-y-auto"
       variants={curtainVariants}
       initial="initial"
       animate="animate"
