@@ -71,10 +71,10 @@ body {
 /* ===== Navbar Moving Stars (Less Dense) ===== */
 .navbar-stars {
   position: absolute;
-  top: -50%;
+  top: 0%;
   left: 0;
   width: 100%;
-  height: 200%;
+  height: 100%;
   pointer-events: none;
 
   background-image:
