@@ -108,7 +108,7 @@ const Contact = () => {
      
 
       {/* Heading */}
-      <div className="mt-2 text-center">
+      <div className="-mt-4 md:mt-2 text-center">
         <h1 className="text-[3rem] font-semibold">Contact Me</h1>
         <p className="text-neutral-400 mt-2  text-4xl sm:text-2xl text-center">
           Want to connect or just say hello? Drop a message
