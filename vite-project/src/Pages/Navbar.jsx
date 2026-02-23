@@ -17,7 +17,7 @@ export default function Navbar({ navItems }) {
   return (
     <>
       {/* Top Bar */}
-      <nav className="fixed top-0 left-0 bg-transparent text-white px-6 flex justify-between items-center z-50 md:hidden overflow-hidden relative">
+      <nav className="fixed top-0 left-0 bg-transparent text-white px-6 py-4 flex justify-between items-center z-50 md:hidden overflow-hidden relative">
 
           {/* ⭐ Navbar Stars */}
   <div className="absolute inset-0 navbar-stars pointer-events-none"></div>
