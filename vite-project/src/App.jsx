@@ -12,25 +12,28 @@ import { Toaster } from "react-hot-toast";
 function App() {
   const location = useLocation();
 
-  // Hide stars only on Home and Resume
-    const hideStars =
-      location.pathname === "/" ||
-      location.pathname === "/home" ||
-      location.pathname.startsWith("/resume");
+  // // Hide stars only on Home and Resume
+  //   const hideStars =
+  //     location.pathname === "/" ||
+  //     location.pathname === "/home" ||
+  //     location.pathname.startsWith("/resume");
 
   return (
     <div className="relative min-h-screen bg-black">
       
       
-      {!hideStars && (
+      {/* {!hideStars && ( */}
         <>
-          <div className="stars fixed inset-0 pointer-events-none z-0"></div>
-          <div className="stars2 fixed inset-0 pointer-events-none z-0"></div>
+        <div className="stars-wrapper">
+          <div className="stars"></div>
+          <div className="stars2"></div>
+          <div className="stars3"></div>
+        </div>
         </>
-      )}
+      {/* )} */}
 
       {/* Main Content */}
-      <div className="relative z-40">
+      <div className="relative z-20">
         <Toaster position="top-center" />
         <Navbar />
 

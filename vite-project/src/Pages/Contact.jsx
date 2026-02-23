@@ -81,7 +81,7 @@ const Contact = () => {
     <>
 
     <motion.div
-      className="min-h-screen bg-neutral-950 text-white z-50 flex flex-col"
+      className="min-h-screen text-white z-10 flex flex-col"
       variants={curtainVariants}
       initial="initial"
       animate="animate"
@@ -100,12 +100,12 @@ const Contact = () => {
           e.stopPropagation();
           navigate("/");
         }}
-        className="absolute top-6 right-6 text-neutral-400 hover:text-white transition cursor-pointer"
+        className="absolute top-6 right-6 text-neutral-400 hover:text-white transition cursor-pointer z-50"
       >
         <X size={28} />
       </button>
 
-      <div className=" stars stars-2"></div>
+     
 
       {/* Heading */}
       <div className="mt-2 text-center">

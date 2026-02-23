@@ -33,7 +33,7 @@ export default function Navbar({ navItems }) {
           <X size={28} onClick={() => setOpen(false)} className="cursor-pointer" />
         </div>
 
-        <div className=" stars stars-2"></div>
+        
 
         <div className="grid grid-cols-1 gap-2  bg-black p-2 mt-6">
           {navLinks.map((item, index) => (
