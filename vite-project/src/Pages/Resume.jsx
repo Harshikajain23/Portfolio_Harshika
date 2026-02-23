@@ -24,7 +24,7 @@ const Resume = () => {
 >
   
   <div className="w-full flex justify-between items-center p-6">
-    <h1 className="text-4xl font-bold">My Resume</h1>
+    <h1 className="text-4xl -mt-5 md:mt-0 font-bold">My Resume</h1>
 
     <div className="flex gap-5 items-center">
       <a
