@@ -296,7 +296,7 @@ const shadowColors = [
         >
           <X size={28} />
         </button>
-        <h1 className="text-4xl lg:text-5xl font-bold mb-10 bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent uppercase">My Projects</h1>
+        <h1 className="text-4xl lg:text-5xl font-bold mb-10 bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent uppercase -mt-5 md:mt-0">My Projects</h1>
       </div>
 
       <div className=" stars stars-2"></div>
