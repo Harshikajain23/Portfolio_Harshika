@@ -20,7 +20,7 @@ export default function Navbar({ navItems }) {
       <nav className="fixed top-0 left-0 bg-transparent text-white px-6 py-4 flex justify-between items-center z-50 md:hidden overflow-hidden relative">
 
           {/* ⭐ Navbar Stars */}
-  <div className="absolute inset-0 navbar-stars pointer-events-none"></div>
+  <div className="absolute navbar-stars pointer-events-none"></div>
         <button className="relative z-10 text-white" onClick={() => setOpen(!open)}>
           {open ? <X size={28} /> : <Menu size={28} />}
         </button>
