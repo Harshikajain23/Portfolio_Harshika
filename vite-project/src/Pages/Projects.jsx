@@ -292,7 +292,7 @@ const shadowColors = [
       <div className="w-full flex justify-center items-center p-6 relative">
         <button
           onClick={() => navigate("/")}
-          className="absolute top-6 right-6 z-50 cursor-pointer text-neutral-400 hover:text-white transition"
+          className="absolute top-0 right-0 md:top-6 md:right-6 z-50 cursor-pointer text-neutral-400 hover:text-white transition"
         >
           <X size={28} />
         </button>
