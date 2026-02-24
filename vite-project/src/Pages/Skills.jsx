@@ -66,7 +66,7 @@ const Skill = ({ name, img }) => (
 
   return (
     <motion.div
-      className="inset-0 bg-neutral-950 text-white z-50 overflow-y-auto"
+      className="inset-0 bg-neutral-950 text-white z-50 overflow-y-auto -mt-10 md:mt-0"
       variants={curtainVariants}
       initial="initial"
       animate="animate"
