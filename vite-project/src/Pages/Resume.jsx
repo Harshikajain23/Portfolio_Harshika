@@ -37,7 +37,7 @@ const Resume = () => {
 
       <span
         onClick={() => navigate("/")}
-        className="cursor-pointer text-white"
+        className="fixed top-0 right-0 cursor-pointer text-white"
       >
         <XIcon />
       </span>
