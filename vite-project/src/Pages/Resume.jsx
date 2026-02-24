@@ -13,7 +13,7 @@ const Resume = () => {
   const navigate = useNavigate();
   return (
     <motion.div
-  className="pt-5 md:pt-0 min-h-screen  text-white flex flex-col items-center"
+  className="pt-5 md:pt-0 min-h-screen  text-white flex flex-col items-center -mt-10 md:mt-0"
   variants={curtainVariants}
   initial="initial"
   animate="animate"
