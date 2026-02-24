@@ -71,7 +71,7 @@ const Home = () => {
   lg:row-span-12
   lg:col-start-1
   lg:row-start-1 text-3xl sm:text-3xl lg:text-[4rem] pt-15 lg:pt-6 bg-neutral-900 p-6 shadow-2xl shadow-black ">
-        <div className="lg:col-span-25 lg:row-span-12 lg:col-start-1 lg:row-start-1 whitespace-nowrap" >
+        <div className="lg:col-span-25 lg:row-span-12 lg:col-start-1 mt-0 md:mt-5 lg:row-start-1 whitespace-nowrap" >
           Hi! I'm Harshika Jain - a <br/>  <p
       className="text-3xl sm:text-3xl lg:text-[4rem]  font-semibold transition-colors duration-500 whitespace-nowrap"
       style={{ color }}
