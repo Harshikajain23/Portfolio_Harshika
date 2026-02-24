@@ -277,7 +277,7 @@ const shadowColors = [
 
   return (
     <motion.div
-      className="min-h-screen bg-neutral-950 text-white z-1 flex flex-col items-center justify-start overflow-y-auto"
+      className="inset-0 min-h-screen bg-neutral-950 text-white z-1 flex flex-col items-center justify-start overflow-y-auto -mt-10 md:mt-0"
       variants={curtainVariants}
       initial="initial"
       animate="animate"
@@ -292,11 +292,11 @@ const shadowColors = [
       <div className="w-full flex justify-center items-center p-6 relative">
         <button
           onClick={() => navigate("/")}
-          className="absolute top-6 right-6 z-50 cursor-pointer text-neutral-400 hover:text-white transition"
+          className="fixed  right-6 top-6 z-50 cursor-pointer text-neutral-400 hover:text-white transition"
         >
           <X size={28} />
         </button>
-        <h1 className="text-4xl lg:text-5xl font-bold mb-10 bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent uppercase">My Projects</h1>
+        <h1 className="text-4xl lg:text-5xl font-bold mb-10 bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent uppercase ">My Projects</h1>
       </div>
 
       <div className=" stars stars-2"></div>

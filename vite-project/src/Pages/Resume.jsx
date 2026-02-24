@@ -13,7 +13,7 @@ const Resume = () => {
   const navigate = useNavigate();
   return (
     <motion.div
-  className="pt-5 md:pt-0 min-h-screen  text-white flex flex-col items-center"
+  className="pt-5 md:pt-0 min-h-screen  text-white flex flex-col items-center -mt-10 md:mt-0"
   variants={curtainVariants}
   initial="initial"
   animate="animate"
@@ -24,7 +24,7 @@ const Resume = () => {
 >
   
   <div className="w-full flex justify-between items-center p-6">
-    <h1 className="text-4xl font-bold">My Resume</h1>
+    <h1 className="text-4xl -mt-5 md:mt-0 font-bold">My Resume</h1>
 
     <div className="flex gap-5 items-center">
       <a
@@ -37,7 +37,7 @@ const Resume = () => {
 
       <span
         onClick={() => navigate("/")}
-        className="cursor-pointer text-white"
+        className=" cursor-pointer text-white"
       >
         <XIcon />
       </span>

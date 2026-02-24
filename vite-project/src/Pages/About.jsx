@@ -33,7 +33,7 @@ const About = () => {
 
   return (
     <motion.div
-      className="inset-0 bg-neutral-950 text-white z-50 overflow-y-auto"
+      className="inset-0 bg-neutral-950 text-white z-50 overflow-y-auto -mt-10 md:mt-0"
       variants={curtainVariants}
       initial="initial"
       animate="animate"
@@ -65,7 +65,7 @@ const About = () => {
 
       {/* Content */}
       <div className="relative z-10 h-full px-6">
-        <div className="mt-10 mb-10 ml-2 sm:ml-2 mr-2 sm:mr-2 lg:ml-15 lg:mr-15 w-70vw h-70vh border border-2 border-white sm:flex flex-col justify-center items-center">
+        <div className="mt-2 md:mt-10 mb-10 ml-2 sm:ml-2 mr-2 sm:mr-2 lg:ml-15 lg:mr-15 w-70vw h-70vh border border-2 border-white sm:flex flex-col justify-center items-center">
         <h1 className="uppercase text-4xl sm:text-2xl lg:text-4xl mx-auto text-center font-semibold mt-6 mb-10">About Me</h1>
 
         <p className=" text-2xl sm:text-xl lg:text-2xl text-white text-justify ml-5 mr-5 lg:ml-15 lg:mr-15 leading-relaxed break-word hyphens-auto">

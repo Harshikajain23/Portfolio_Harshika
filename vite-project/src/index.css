@@ -6,6 +6,8 @@
 
 body {
   font-family: "Outfit", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 /* ===== Stars Wrapper ===== */
@@ -71,7 +73,7 @@ body {
 /* ===== Navbar Moving Stars (Less Dense) ===== */
 .navbar-stars {
   position: absolute;
-  top: -50%;
+  top: 0%;
   left: 0;
   width: 100%;
   height: 200%;

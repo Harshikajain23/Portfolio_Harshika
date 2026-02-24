@@ -66,7 +66,7 @@ const Skill = ({ name, img }) => (
 
   return (
     <motion.div
-      className="inset-0 bg-neutral-950 text-white z-50 overflow-y-auto"
+      className="inset-0 bg-neutral-950 text-white z-50 overflow-y-auto -mt-10 md:mt-0"
       variants={curtainVariants}
       initial="initial"
       animate="animate"
@@ -96,7 +96,7 @@ const Skill = ({ name, img }) => (
 
       {/* Content */}
      <div className=" stars stars-2"></div>
-      <h1 className="text-4xl uppercase lg:text-4xl sm:text-2xl mx-auto text-center font-semibold mt-6 mb-18">
+      <h1 className="text-4xl uppercase lg:text-4xl sm:text-2xl mx-auto text-center font-semibold mt-2 md:mt-6 mb-18">
   Skills
 </h1>
 
