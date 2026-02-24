@@ -66,7 +66,7 @@ const Home = () => {
        
         {/* Hero */}
 
-        <div className="grid grid-cols-1 col-span-1 -mt-5 md:mt-0
+        <div className="grid grid-cols-1 col-span-1 -mt-10 md:mt-0
   lg:col-span-30
   lg:row-span-12
   lg:col-start-1
