@@ -81,11 +81,10 @@ body {
 
   background-image:
     radial-gradient(1.8px 1.8px at 10% 25%, #ffffff, transparent),
-    radial-gradient(2.3px 2.3px at 30% 65%, #ffffff, transparent),
-    radial-gradient(2px 2px at 50% 40%, #ffffff, transparent),
-    radial-gradient(3px 3px at 70% 75%, #ffffff, transparent),
+    radial-gradient(1.8px 1.8px at 50% 40%, #ffffff, transparent),
+    radial-gradient(2px 2px at 60% 75%, #ffffff, transparent),
     radial-gradient(1.8px 1.8px at 85% 35%, #ffffff, transparent),
-    radial-gradient(3px 3px at 95% 60%, #ffffff, transparent);
+    radial-gradient(2px 2px at 95% 70%, #ffffff, transparent);
 
   background-size: 180px 180px; /* increased spacing */
   opacity: 0.4;
