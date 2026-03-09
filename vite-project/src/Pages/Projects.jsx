@@ -300,7 +300,7 @@ const shadowColors = [
           initial="initial"
           animate="animate"
           transition={{
-            duration: isMobile ? 0.6 : 1.1,
+            duration: isMobile ? 1.1 : 1.1,
             ease: [0.77, 0, 0.175, 1],
       }}
       
