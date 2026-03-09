@@ -3,15 +3,14 @@ import { Github, Linkedin, Mail, X } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import BubbleBurst from "../Components/BubbleBurst";
 import "../styles/dots.css";
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import emailjs from "@emailjs/browser";
 import toast from "react-hot-toast";
 import Navbar from "./Navbar";
 
-const curtainVariants = {
-  initial: { y: "100%" },
-  animate: { y: "0%" }
-};
+
+
+
 
 const Contact = () => {
   const handleSubmit = (e) => {
@@ -59,6 +58,27 @@ const Contact = () => {
       .finally(() => setLoading(false));
   };
 
+  const desktopVariants = {
+  initial: { y: "100%" },
+  animate: { y: "0%" }
+};
+
+const mobileVariants = {
+  initial: { opacity: 0 },
+  animate: { opacity: 1 }
+};
+
+const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+
+useEffect(() => {
+  const handleResize = () => {
+    setIsMobile(window.innerWidth < 768);
+  };
+
+  window.addEventListener("resize", handleResize);
+  return () => window.removeEventListener("resize", handleResize);
+}, []);
+
   const navigate = useNavigate();
 
   const formRef = useRef();
@@ -82,12 +102,12 @@ const Contact = () => {
 
     <motion.div
       className="min-h-screen text-white z-10 flex flex-col"
-      variants={curtainVariants}
+       variants={isMobile ? mobileVariants : desktopVariants}
       initial="initial"
       animate="animate"
       transition={{
-        duration: 1.1,
-        ease: [0.77, 0, 0.175, 1],
+            duration: isMobile ? 0.6 : 1.1,
+            ease: [0.77, 0, 0.175, 1],
       }}
       onClick={handleClick}
     >

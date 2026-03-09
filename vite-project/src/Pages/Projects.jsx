@@ -1,15 +1,33 @@
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 import { Link2Icon, GithubIcon, X, ChevronLeft, ChevronRight } from "lucide-react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
-const curtainVariants = {
-  initial: { y: "100%" },
-  animate: { y: "0%" },
-};
+
 
 const Projects = () => {
   const navigate = useNavigate();
+
+  const desktopVariants = {
+    initial: { y: "100%" },
+    animate: { y: "0%" }
+  };
+  
+  const mobileVariants = {
+    initial: { opacity: 0 },
+    animate: { opacity: 1 }
+  };
+  
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+  
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+  
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   const mainProjects = [
     {
@@ -278,15 +296,13 @@ const shadowColors = [
   return (
     <motion.div
       className="inset-0 min-h-screen bg-neutral-950 text-white z-1 flex flex-col items-center justify-start overflow-y-auto -mt-10 md:mt-0"
-      variants={curtainVariants}
-      initial="initial"
-      animate="animate"
-      exit="exit"
-      transition={{
-        duration: 1.1,
-        ease: [0.77, 0, 0.175, 1],
+      variants={isMobile ? mobileVariants : desktopVariants}
+          initial="initial"
+          animate="animate"
+          transition={{
+            duration: isMobile ? 0.6 : 1.1,
+            ease: [0.77, 0, 0.175, 1],
       }}
-
       
     >
       <div className="w-full flex justify-center items-center p-6 relative">

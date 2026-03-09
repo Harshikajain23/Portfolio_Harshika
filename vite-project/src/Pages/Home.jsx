@@ -1,10 +1,11 @@
 import React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import BubbleBurst from "../Components/BubbleBurst";
 import { Typewriter } from "react-simple-typewriter";
 import AnimatedImage from "../Components/AnimatedImage";
 import { useNavigate } from "react-router-dom";
 import Navbar from "./Navbar";
+import { motion } from "framer-motion";
 
   const words = [
   "Software Developer",
@@ -24,6 +25,27 @@ const colors = [
 ];
 
 const Home = () => {
+
+  
+  
+  const mobileVariants = {
+    initial: { opacity: 0 },
+    animate: { opacity: 1 }
+  };
+  
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+  
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+  
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  
+
 
     const navigate = useNavigate();
 
@@ -50,8 +72,15 @@ const Home = () => {
   };
 
   return (
-
-    <>
+   <motion.div
+          className="inset-0 bg-neutral-950 text-white z-50 overflow-y-auto -mt-10 md:mt-0"
+          variants={isMobile ? mobileVariants : {} }
+          initial="initial"
+          animate="animate"
+          transition={{
+            duration: isMobile ? 0.6 : 1.1,
+            ease: [0.77, 0, 0.175, 1],
+      }} >
 
     
     <div  onClick={handleClick} className=" min-h-screen h-screen overflow-x-hidden  p-6 text-white text-center z-20">
@@ -169,7 +198,7 @@ const Home = () => {
       </div>
     </div>
 
-    </>
+    </motion.div>
   );
 };
 

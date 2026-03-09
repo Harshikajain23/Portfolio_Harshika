@@ -3,16 +3,37 @@ import { X } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import BubbleBurst from "../Components/BubbleBurst";
 import "../styles/dots.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
-const curtainVariants = {
-  initial: { x: "100%" },
-  animate: { x: "0%" }
-};
+
+
+
+
 
 const About = () => {
   const navigate = useNavigate();
   const [bubbles, setBubbles] = useState([]);
+
+  const desktopVariants = {
+  initial: { x: "100%" },
+  animate: { x: "0%" }
+};
+
+const mobileVariants = {
+  initial: { opacity: 0 },
+  animate: { opacity: 1 }
+};
+
+const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+
+useEffect(() => {
+  const handleResize = () => {
+    setIsMobile(window.innerWidth < 768);
+  };
+
+  window.addEventListener("resize", handleResize);
+  return () => window.removeEventListener("resize", handleResize);
+}, []);
 
   const handleClick = (e) => {
     const rect = e.currentTarget.getBoundingClientRect();
@@ -32,15 +53,16 @@ const About = () => {
   };
 
   return (
-    <motion.div
-      className="inset-0 bg-neutral-950 text-white z-50 overflow-y-auto -mt-10 md:mt-0"
-      variants={curtainVariants}
-      initial="initial"
-      animate="animate"
-      transition={{
-        duration: 1.1,
-        ease: [0.77, 0, 0.175, 1],
+        <motion.div
+          className="inset-0 bg-neutral-950 text-white z-50 overflow-y-auto -mt-10 md:mt-0"
+          variants={isMobile ? mobileVariants : desktopVariants}
+          initial="initial"
+          animate="animate"
+          transition={{
+            duration: isMobile ? 0.6 : 1.1,
+            ease: [0.77, 0, 0.175, 1],
       }}
+
     >
 
       <div className=" stars stars-2"></div>
