@@ -159,7 +159,7 @@ const shadowColors = [
           href={item.live}
           target="_blank"
           rel="noopener noreferrer"
-          className={`hover:text-white flex items-center gap-1 hover:underline ${colors[index % colors.length]}`}
+          className={`hover:text-white flex items-center gap-1 hover:underline z-40 ${colors[index % colors.length]}`}
         >
           <Link2Icon size={30} /> 
         </a>
@@ -169,7 +169,7 @@ const shadowColors = [
           href={item.github}
           target="_blank"
           rel="noopener noreferrer"
-          className={` hover:text-white flex items-center gap-1 hover:underline ${colors[index % colors.length]}`}
+          className={` hover:text-white flex items-center gap-1 hover:underline z-40 ${colors[index % colors.length]}`}
         >
           <GithubIcon size={30} />
         </a>
@@ -250,7 +250,7 @@ const shadowColors = [
           {showToggle && (
             <span
               onClick={() => toggleShowFull(globalIndex)}
-              className="text-slate-500 cursor-pointer hover:underline block mt-1"
+              className="text-slate-500 cursor-pointer hover:underline block mt-1 z-40"
             >
               {showFullDesc[globalIndex] ? "See Less" : "See More"}
             </span>
