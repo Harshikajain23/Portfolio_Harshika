@@ -103,7 +103,16 @@ const Home = () => {
         <div className="lg:col-span-25 lg:row-span-12 lg:col-start-1 mt-0 md:mt-5 lg:row-start-1 whitespace-nowrap" >
           Hi! I'm Harshika Jain - a <br/>  <p
       className="text-3xl sm:text-3xl lg:text-[4rem]  font-semibold transition-colors duration-500 whitespace-nowrap"
-      style={{ color }}
+     style={{
+    color: "white",
+    textShadow: `
+      1px 1px 0 #ccc,
+      2px 2px 0 #bbb,
+      3px 3px 0 #aaa,
+      4px 4px 0 #999,
+      5px 5px 10px rgba(0,0,0,0.4)
+    `
+  }}
     >
       <Typewriter
         words={words}
