@@ -22,6 +22,7 @@ const colors = [
   "#e11d48", // Strong Red Pink
   "#d946ef", // Neon Purple
   "#38bdf8", // Electric Blue
+  
 ];
 
 const Home = () => {
@@ -104,8 +105,8 @@ const Home = () => {
           Hi! I'm Harshika Jain - a <br/>  <p
       className="text-3xl sm:text-3xl lg:text-[4rem]  font-semibold transition-colors duration-500 whitespace-nowrap"
      style={{
-    color: "white",
-    textShadow: `
+   color: isMobile ? "white" : "white",
+    textShadow: isMobile ? "none" : `
       1px 1px 0 #ccc,
       2px 2px 0 #bbb,
       3px 3px 0 #aaa,

@@ -35,7 +35,7 @@ const Projects = () => {
       description:
         "Generated ATS-friendly, customizable resumes. Users can create a resume from scratch or upload an existing one. Integrated ImageKit API and Gemini API for AI-powered features. Users can delete, rename, download, and share their resumes. Requires login and signup to access features.",
       tech: "MERN stack (MongoDB, Express, React, Nodejs), Tailwind CSS, Gemini API, ImageKit",
-      live: "https://byharshikajain.in",
+      live: "https://ai-resume-builder-2-1ux9.onrender.com/",
       github: "https://github.com/Harshikajain23/ai-resume-builder.git",
       images: ["/images/ai-resume-builder-1.JPG", "/images/ai-resume-builder-2.JPG", "/images/ai-resume-builder-3.JPG","/images/ai-resume-builder-4.JPG", "/images/ai-resume-builder-5.JPG", "/images/ai-resume-builder-6.JPG", "/images/ai-resume-builder-7.JPG"]
     },
@@ -180,7 +180,7 @@ const shadowColors = [
     href={item.backend}
     target="_blank"
     rel="noopener noreferrer"
-    className="text-sm text-slate-400 hover:underline"
+    className="text-sm text-slate-400 z-40 hover:underline hover:cursor-pointer"
   >
     ⚠ Click here to wake up backend (may take a few seconds)
   </a>
