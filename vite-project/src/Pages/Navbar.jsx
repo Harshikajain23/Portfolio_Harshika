@@ -7,11 +7,11 @@ export default function Navbar({ navItems }) {
 
   const navLinks = [
     { name: "Home", path: "/", icon: <Home size={20} /> },
-    { name: "About", path: "/about", icon: <User size={20} /> },
-    { name: "Skills", path: "/skills", icon: <Code size={20} /> },
+    { name: "About", path: "/#about", icon: <User size={20} /> },
+    { name: "Skills", path: "/#skills", icon: <Code size={20} /> },
     { name: "Projects", path: "/projects", icon: <Folder size={20} /> },
     { name: "Resume", path: "/resume", icon: <FileText size={20} /> },
-    { name: "Contact", path: "/contact", icon: <Mail size={20} /> },
+    { name: "Contact", path: "/#contact", icon: <Mail size={20} /> },
   ];
 
   return (
@@ -34,9 +34,7 @@ export default function Navbar({ navItems }) {
       >
           {/* ⭐ Stars Layer */}
   <div className="absolute inset-0 navbar-stars pointer-events-none"></div>
-        <div className="flex justify-start p-6">
-          <X size={28} onClick={() => setOpen(false)} className="cursor-pointer" />
-        </div>
+       
 
         
 

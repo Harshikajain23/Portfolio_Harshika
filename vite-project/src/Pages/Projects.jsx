@@ -295,7 +295,7 @@ const shadowColors = [
 
   return (
     <motion.div
-      className="inset-0 min-h-screen bg-neutral-950 text-white z-1 flex flex-col items-center justify-start overflow-y-auto -mt-10 md:mt-0"
+      className="inset-0 min-h-screen bg-neutral-950 text-white z-1 flex flex-col items-center justify-start overflow-y-auto md:mt-0"
       variants={isMobile ? mobileVariants : desktopVariants}
           initial="initial"
           animate="animate"
