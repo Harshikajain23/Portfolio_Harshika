@@ -5,11 +5,18 @@ function ScrollToHash() {
   const { hash } = useLocation();
 
   useEffect(() => {
-    if (hash) {
-      const element = document.querySelector(hash);
-      if (element) {
-        element.scrollIntoView({ behavior: "smooth" });
-      }
+    if (!hash) return;
+
+    const element = document.querySelector(hash);
+
+    if (element) {
+      element.scrollIntoView({
+        behavior: "smooth",
+        block:
+          hash === "#about" || hash === "#contact"
+            ? "center"
+            : "start",
+      });
     }
   }, [hash]);
 

@@ -160,7 +160,7 @@ const Home = () => {
         
         
         
-        {/* About */}
+        {/* Project */}
         <div onClick={() => navigate("/projects")} className=" col-span-1 order-1 md:order-1 lg:col-span-2 hidden md:flex 
     lg:row-span-5
     lg:col-start-31
@@ -188,8 +188,7 @@ const Home = () => {
 
          <div onClick={() =>
     document.getElementById("skills")?.scrollIntoView({
-      behavior: "smooth",
-      block: "center",
+      behavior: "smooth"
     })
   } className="order-5 md:order-3 col-span-1 lg:row-span-2 lg:col-span-5 lg:col-start-23 lg:row-start-13  bg-neutral-900 p-6 z-40 rounded-md cursor-pointer  hover:bg-[#ce4f0f] shadow-2xl shadow-black hidden md:flex items-center justify-center ">
           <span className="font-semibold hover:font-extrabold font-inter uppercase tracking-[0.3em] inline-block text-xl text-center my-auto">
