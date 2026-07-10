@@ -119,7 +119,7 @@ useEffect(() => {
      
 
       {/* Heading */}
-      <div className="md:mt-2 text-center">
+      <div className="mt-3 text-center">
         <h1 className="text-[3rem] font-semibold">Contact Me</h1>
         <p className="text-neutral-400 mt-2  text-2xl md:text-4xl text-center">
           Want to connect or just say hello? Drop a message
