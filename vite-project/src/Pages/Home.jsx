@@ -223,21 +223,21 @@ const Home = () => {
 
       </div>
     </div>
-      <section className="my-30" id="about">
+      <section className="my-24" id="about">
 
      
     <About/>
 
      </section>
 
-      <section clssName="my-30 md:my-0" id="skills">
+      <section className="my-24 md:my-0" id="skills">
 
      
     <Skills/>
 
      </section>
 
-     <section className="my-30">
+     <section className="my-24">
 
       <ProjectDisplay/>
      </section>
