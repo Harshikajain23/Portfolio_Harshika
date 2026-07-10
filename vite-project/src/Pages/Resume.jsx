@@ -8,8 +8,8 @@ import { useEffect, useState } from "react";
 const Resume = () => {
 
   const desktopVariants = {
-      initial: { y: "100%" },
-      animate: { y: "0%" }
+      initial: { x : "100%" },
+      animate: { x : "0%" }
     };
     
     const mobileVariants = {
@@ -46,7 +46,7 @@ const Resume = () => {
 
     <div className="flex gap-5 items-center">
       <a
-        href="/HarshikaJain-Resume.pdf"
+        href="/Harshika resume final.pdf"
         download
         className="rounded-md bg-white text-black px-6 py-3"
       >
@@ -63,7 +63,7 @@ const Resume = () => {
   </div>
 
   <iframe
-    src="/HarshikaJain-Resume.pdf"
+    src="/Harshika resume final.pdf"
     className="w-full h-screen"
     title="Resume PDF"
   />

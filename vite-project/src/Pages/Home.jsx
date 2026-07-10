@@ -6,6 +6,10 @@ import AnimatedImage from "../Components/AnimatedImage";
 import { useNavigate } from "react-router-dom";
 import Navbar from "./Navbar";
 import { motion } from "framer-motion";
+import About from "./About";
+import Skills from "./Skills";
+import Contact from "./Contact";
+import ProjectDisplay from "./ProjectDisplay";
 
   const words = [
   "Software Developer",
@@ -83,8 +87,14 @@ const Home = () => {
             ease: [0.77, 0, 0.175, 1],
       }} >
 
+        
+          <div className="stars"></div>
+          <div className="stars2"></div>
+          <div className="stars3"></div>
+       
+
     
-    <div  onClick={handleClick} className=" min-h-screen h-screen overflow-x-hidden  p-6 text-white text-center z-20">
+    <div  onClick={handleClick} className=" min-h-screen h-screen overflow-x-hidden  p-6 text-white text-center z-2 0">
 
      
      <div className="  grid
@@ -150,64 +160,106 @@ const Home = () => {
         
         
         
-        
+        {/* About */}
+        <div onClick={() => navigate("/projects")} className=" col-span-1 order-1 md:order-1 lg:col-span-2 hidden md:flex 
+    lg:row-span-5
+    lg:col-start-31
+    lg:row-start-8 rounded-md bg-neutral-900 p-6 items-center justify-center cursor-pointer hover:bg-[#73086ef7] shadow-2xl shadow-black ">
+          <span className="font-semibold  font-inter uppercase tracking-[0.3em] inline-block lg:-rotate-90 text-xl text-center my-auto hover:font-extrabold z-40">
+            Projects
+        </span>
+        </div>
 
         
 
-        {/* Skills */}
-        <div onClick={() => navigate("/skills")} className=" col-span-1
+        {/* Resume */}
+        <div onClick={() => navigate("/resume")} className=" col-span-1
   rounded-md bg-neutral-900 
 
   lg:col-span-2
   lg:row-span-5
   lg:col-start-31
-  lg:row-start-3 p-6 hidden md:flex justify-center items-center cursor-pointer hover:bg-[#096670f7] shadow-2xl shadow-black order-2 md:order-1">
-             <span className="font-semibold  font-inter uppercase tracking-[0.3em] inline-block lg:-rotate-90 text-xl text-center my-auto hover:font-extrabold">
+  lg:row-start-3 p-6 hidden md:flex justify-center items-center cursor-pointer hover:bg-[#096670f7] shadow-2xl shadow-black order-2 md:order-2">
+             <span className="font-semibold  font-inter uppercase tracking-[0.3em] inline-block lg:-rotate-90 text-xl text-center my-auto hover:font-extrabold z-40">
+             Resume
+        </span>
+        
+        </div>
+
+         <div onClick={() =>
+    document.getElementById("skills")?.scrollIntoView({
+      behavior: "smooth",
+    })
+  } className="order-5 md:order-3 col-span-1 lg:row-span-2 lg:col-span-5 lg:col-start-23 lg:row-start-13  bg-neutral-900 p-6 z-40 rounded-md cursor-pointer  hover:bg-[#ce4f0f] shadow-2xl shadow-black hidden md:flex items-center justify-center ">
+          <span className="font-semibold hover:font-extrabold font-inter uppercase tracking-[0.3em] inline-block text-xl text-center my-auto">
              Skills
         </span>
-        
         </div>
 
-        {/* About */}
-        <div onClick={() => navigate("/about")} className=" col-span-1 order-1 md:order-2 lg:col-span-2 hidden md:flex
-    lg:row-span-5
-    lg:col-start-31
-    lg:row-start-8 rounded-md bg-neutral-900 p-6 items-center justify-center cursor-pointer hover:bg-[#73086ef7] shadow-2xl shadow-black ">
-          <span className="font-semibold  font-inter uppercase tracking-[0.3em] inline-block lg:-rotate-90 text-xl text-center my-auto hover:font-extrabold">
-            About
-        </span>
-        </div>
-
-        {/* Resume */}
-        <div onClick={() => navigate("/resume")} className="col-span-1 order-4 md:order-2 lg:row-span-2 lg:col-span-5 lg:col-start-18 lg:row-start-13  bg-neutral-900 p-6 rounded-md cursor-pointer hover:bg-[#b4063af7] shadow-2xl shadow-black hidden md:flex justify-center ">
-          <span className="font-semibold font-inter uppercase tracking-[0.3em] inline-block text-xl text-center my-auto hover:font-extrabold">
-             Resume
-
-        </span>
-        </div>
-
-        
-        <div onClick={() => navigate("/contact")} className="order-5 md:order-3 col-span-1 lg:row-span-2 lg:col-span-5 lg:col-start-23 lg:row-start-13  bg-neutral-900 p-6  rounded-md cursor-pointer  hover:bg-[#ce4f0f] shadow-2xl shadow-black hidden md:flex items-center justify-center ">
-          <span className="font-semibold hover:font-extrabold font-inter uppercase tracking-[0.3em] inline-block text-xl text-center my-auto">
+             {/* Contact */}
+        <div onClick={() =>
+    document.getElementById("contact")?.scrollIntoView({
+      behavior: "smooth",
+    })
+  } className="font-inter order-3 md:order-4 lg:col-span-5 lg:row-span-2 lg:col-start-28 lg:row-start-13  rounded-md bg-neutral-900 p-6 cursor-pointer hover:bg-[#11a00e] shadow-2xl shadow-black hidden md:flex items-center justify-center ">
+          <span className="font-semibold font-inter uppercase tracking-[0.3em] inline-block  text-xl text-center my-auto hover:font-extrabold z-40">
              Contact
         </span>
         </div>
 
-        
-        
+        {/* About */}
+        <div  onClick={() =>
+    document.getElementById("about")?.scrollIntoView({
+      behavior: "smooth",
+    })
+  } className="col-span-1 order-4 md:order-5 lg:row-span-2 lg:col-span-5 lg:col-start-18 lg:row-start-13  bg-neutral-900 p-6 rounded-md cursor-pointer hover:bg-[#b4063af7] shadow-2xl shadow-black hidden md:flex justify-center ">
+          <span className="font-semibold font-inter uppercase tracking-[0.3em] inline-block text-xl text-center my-auto hover:font-extrabold z-40">
+             About
 
-
-
-         {/* Project */}
-        <div onClick={() => navigate("/projects")} className="font-inter order-3 md:order-4 lg:col-span-5 lg:row-span-2 lg:col-start-28 lg:row-start-13  rounded-md bg-neutral-900 p-6 cursor-pointer hover:bg-[#11a00e] shadow-2xl shadow-black hidden md:flex items-center justify-center ">
-          <span className="font-semibold font-inter uppercase tracking-[0.3em] inline-block  text-xl text-center my-auto hover:font-extrabold">
-             Projects
         </span>
         </div>
 
+        
+       
+
+        
+        
+
+
+
+    
+
       </div>
     </div>
+      <section className="py-30" id="about">
 
+     
+    <About/>
+
+     </section>
+
+      <section id="skills">
+
+     
+    <Skills/>
+
+     </section>
+
+     <section className="py-30">
+
+      <ProjectDisplay/>
+     </section>
+
+    <section id="contact">
+
+    
+
+     
+    <Contact/>
+
+     </section>
+
+      
     </motion.div>
   );
 };

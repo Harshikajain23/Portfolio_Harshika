@@ -115,16 +115,7 @@ useEffect(() => {
         <BubbleBurst key={i} x={r.x} y={r.y} />
       ))}
       {/* Close Button */}
-      <button
-        onClick={(e) => {
-          e.stopPropagation();
-          navigate("/");
-        }}
-        className="absolute top-6 right-6 text-neutral-400 hover:text-white transition cursor-pointer z-50"
-      >
-        <X size={28} />
-      </button>
-
+     
      
 
       {/* Heading */}

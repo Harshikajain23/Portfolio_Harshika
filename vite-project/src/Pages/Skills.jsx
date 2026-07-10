@@ -8,17 +8,9 @@ import { useState, useEffect } from "react";
 
 const Skills = () => {
 
-  const desktopVariants = {
-    initial: { x: "100%" },
-    animate: { x: "0%" }
-  };
+ 
   
-  const mobileVariants = {
-    initial: { opacity: 0 },
-    animate: { opacity: 1 }
-  };
   
-  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
 
   useEffect(() => {
     const handleResize = () => {
@@ -85,35 +77,18 @@ const Skill = ({ name, img }) => (
   return (
     <motion.div
       className="inset-0 bg-neutral-950 text-white z-50 overflow-y-auto -mt-10 md:mt-0"
-      variants={isMobile ? mobileVariants : desktopVariants}
-      initial="initial"
-      animate="animate"
-      transition={{
-            duration: isMobile ? 1.1 : 1.1,
-            ease: [0.77, 0, 0.175, 1],
-      }}
     >
-      {/* Clickable Bubble Background */}
-      <div
-        className="absolute inset-0 z-20"
-        onClick={handleClick}
-      />
+      
 
       {/* Bubbles */}
       {bubbles.map((bubble, index) => (
         <BubbleBurst key={index} x={bubble.x} y={bubble.y} />
       ))}
 
-      {/* Close Button */}
-      <button
-        onClick={() => navigate("/")}
-        className="absolute top-6 right-6 z-50 cursor-pointer text-neutral-400 hover:text-white transition"
-      >
-        <X size={28} />
-      </button>
+     
 
       {/* Content */}
-     <div className=" stars stars-2"></div>
+ 
       <h1 className="text-4xl uppercase lg:text-4xl sm:text-2xl mx-auto text-center font-semibold mt-2 md:mt-6 mb-18">
   Skills
 </h1>

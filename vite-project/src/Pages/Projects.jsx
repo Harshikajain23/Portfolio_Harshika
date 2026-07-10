@@ -9,8 +9,8 @@ const Projects = () => {
   const navigate = useNavigate();
 
   const desktopVariants = {
-    initial: { y: "100%" },
-    animate: { y: "0%" }
+    initial: { x: "100%" },
+    animate: { x: "0%" }
   };
   
   const mobileVariants = {
