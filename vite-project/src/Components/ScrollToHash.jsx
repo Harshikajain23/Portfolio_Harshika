@@ -13,7 +13,7 @@ function ScrollToHash() {
       element.scrollIntoView({
         behavior: "smooth",
         block:
-          hash === "#about" || hash === "#contact"
+          hash === "#about"
             ? "center"
             : "start",
       });
