@@ -12,6 +12,8 @@ import { Toaster } from "react-hot-toast";
 function App() {
   const location = useLocation();
 
+  const hideNavbar = location.pathname === "/resume";
+
   // // Hide stars only on Home and Resume
   //   const hideStars =
   //     location.pathname === "/" ||
@@ -36,7 +38,7 @@ function App() {
       {/* Main Content */}
       <div className="relative z-20">
         <Toaster position="top-center" />
-        <Navbar />
+      {!hideNavbar && <Navbar/>}
 
         <AnimatePresence mode="wait">
           <Routes location={location} key={location.pathname}>
