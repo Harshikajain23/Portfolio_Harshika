@@ -78,7 +78,7 @@ const Home = () => {
 
   return (
    <motion.div
-          className="inset-0 bg-neutral-950 text-white z-50 overflow-y-auto -mt-10 md:mt-0"
+          className="inset-0 bg-neutral-950 text-white z-50 overflow-y-auto md:mt-0"
           variants={isMobile ? mobileVariants : {} }
           initial="initial"
           animate="animate"
@@ -94,7 +94,7 @@ const Home = () => {
        
 
     
-    <div  onClick={handleClick} className=" min-h-screen h-screen overflow-x-hidden  p-6 text-white text-center z-2 0">
+    <div  onClick={handleClick} className=" min-h-screen overflow-x-hidden  p-6 text-white text-center z-2 0">
 
      
      <div className="  grid
@@ -106,7 +106,7 @@ const Home = () => {
        
         {/* Hero */}
 
-        <div className="grid grid-cols-1 col-span-1 -mt-15 md:mt-0
+        <div className="grid grid-cols-1 col-span-1 mt-10 md:mt-0
   lg:col-span-30
   lg:row-span-12
   lg:col-start-1
@@ -219,33 +219,25 @@ const Home = () => {
         </span>
         </div>
 
-        
-       
-
-        
-        
-
-
-
     
 
       </div>
     </div>
-      <section className="py-30" id="about">
+      <section className="my-10 md:my-30" id="about">
 
      
     <About/>
 
      </section>
 
-      <section id="skills">
+      <section clssName="my-30 md:my-0" id="skills">
 
      
     <Skills/>
 
      </section>
 
-     <section className="py-30">
+     <section className="my-30">
 
       <ProjectDisplay/>
      </section>

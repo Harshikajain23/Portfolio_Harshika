@@ -121,7 +121,7 @@ useEffect(() => {
       {/* Heading */}
       <div className="-mt-5 md:mt-2 text-center">
         <h1 className="text-[3rem] font-semibold">Contact Me</h1>
-        <p className="text-neutral-400 mt-2  text-4xl sm:text-2xl text-center">
+        <p className="text-neutral-400 mt-2  text-2xl md:text-4xl text-center">
           Want to connect or just say hello? Drop a message
           <span className="dots ml-1"></span>
         </p>

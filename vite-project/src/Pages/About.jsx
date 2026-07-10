@@ -55,7 +55,7 @@ const About = () => {
           </h1>
 
           {isMobile ? (
-            <p className="text-xl text-white text-justify ml-5 mr-5 leading-relaxed break-word hyphens-auto">
+            <p className="text-xl text-white text-justify ml-5 mr-5 mb-10 leading-relaxed break-word hyphens-auto">
               Full Stack Developer with an AI-focused Master's in Computer
               Science, specializing in MERN stack development and machine
               learning (Image Captioning using CNN/LSTM). I enjoy chess,
