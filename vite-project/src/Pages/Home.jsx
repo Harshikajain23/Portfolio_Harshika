@@ -106,7 +106,7 @@ const Home = () => {
        
         {/* Hero */}
 
-        <div className="grid grid-cols-1 col-span-1 mt-10 md:mt-0
+        <div className="grid grid-cols-1 col-span-1 mt-5 md:mt-0
   lg:col-span-30
   lg:row-span-12
   lg:col-start-1
@@ -223,7 +223,7 @@ const Home = () => {
 
       </div>
     </div>
-      <section className="my-10 md:my-30" id="about">
+      <section className="my-30" id="about">
 
      
     <About/>
