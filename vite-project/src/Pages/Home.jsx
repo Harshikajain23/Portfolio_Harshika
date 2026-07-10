@@ -106,7 +106,7 @@ const Home = () => {
        
         {/* Hero */}
 
-        <div className="grid grid-cols-1 col-span-1 mt-5 md:mt-0
+        <div className="grid grid-cols-1 col-span-1  md:mt-0
   lg:col-span-30
   lg:row-span-12
   lg:col-start-1
@@ -189,6 +189,7 @@ const Home = () => {
          <div onClick={() =>
     document.getElementById("skills")?.scrollIntoView({
       behavior: "smooth",
+      block: "center",
     })
   } className="order-5 md:order-3 col-span-1 lg:row-span-2 lg:col-span-5 lg:col-start-23 lg:row-start-13  bg-neutral-900 p-6 z-40 rounded-md cursor-pointer  hover:bg-[#ce4f0f] shadow-2xl shadow-black hidden md:flex items-center justify-center ">
           <span className="font-semibold hover:font-extrabold font-inter uppercase tracking-[0.3em] inline-block text-xl text-center my-auto">
@@ -200,6 +201,7 @@ const Home = () => {
         <div onClick={() =>
     document.getElementById("contact")?.scrollIntoView({
       behavior: "smooth",
+      block: "center",
     })
   } className="font-inter order-3 md:order-4 lg:col-span-5 lg:row-span-2 lg:col-start-28 lg:row-start-13  rounded-md bg-neutral-900 p-6 cursor-pointer hover:bg-[#11a00e] shadow-2xl shadow-black hidden md:flex items-center justify-center ">
           <span className="font-semibold font-inter uppercase tracking-[0.3em] inline-block  text-xl text-center my-auto hover:font-extrabold z-40">
@@ -211,6 +213,7 @@ const Home = () => {
         <div  onClick={() =>
     document.getElementById("about")?.scrollIntoView({
       behavior: "smooth",
+      block: "center",
     })
   } className="col-span-1 order-4 md:order-5 lg:row-span-2 lg:col-span-5 lg:col-start-18 lg:row-start-13  bg-neutral-900 p-6 rounded-md cursor-pointer hover:bg-[#b4063af7] shadow-2xl shadow-black hidden md:flex justify-center ">
           <span className="font-semibold font-inter uppercase tracking-[0.3em] inline-block text-xl text-center my-auto hover:font-extrabold z-40">
