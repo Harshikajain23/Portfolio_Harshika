@@ -46,7 +46,7 @@ const Resume = () => {
 
     <div className="flex gap-5 items-center">
       <a
-        href="/Harshika resume final.pdf"
+        href="/Harshika-resume-final.pdf"
         download
         className="rounded-md bg-white text-black px-6 py-3"
       >
@@ -63,7 +63,7 @@ const Resume = () => {
   </div>
 
   <iframe
-    src="/Harshika resume final.pdf"
+    src="/Harshika-resume-final.pdf"
     className="w-full h-screen"
     title="Resume PDF"
   />
