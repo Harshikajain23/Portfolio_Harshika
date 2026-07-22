@@ -83,7 +83,7 @@ const ProjectDisplay = () => {
 
   return (
   <div
-    className="relative bg-neutral-950 text-white min-h-screen px-6 py-12"
+    className="relative bg-transparent text-white min-h-screen px-6 py-12"
     onClick={handleClick}
   >
     {/* Bubble Layer */}
