@@ -101,7 +101,7 @@ useEffect(() => {
     <>
 
     <motion.div
-      className="min-h-screen text-white z-10 flex flex-col"
+      className="min-h-screen text-white flex flex-col"
        variants={isMobile ? mobileVariants : desktopVariants}
       initial="initial"
       animate="animate"
@@ -132,7 +132,7 @@ useEffect(() => {
         ref={formRef}
         onSubmit={handleSubmit}
         onClick={(e) => e.stopPropagation()}
-        className="w-full max-w-md mx-auto mt-12 px-6 space-y-5"
+        className="w-full max-w-md z-50 mx-auto mt-12 px-6 space-y-5"
       >
         <input
           type="text"
@@ -165,7 +165,7 @@ useEffect(() => {
       </form>
 
       {/* Social Links */}
-      <div className="mt-7 flex justify-center gap-6">
+      <div className="mt-7 z-50 flex justify-center gap-6">
         <a
           href="https://github.com/Harshikajain23"
           target="_blank"

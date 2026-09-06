@@ -113,7 +113,7 @@ const ProjectDisplay = () => {
             variants={cardVariants}
             whileHover={{ y: -8, scale: 1.02 }}
             transition={{ type: "spring", stiffness: 300, damping: 20 }}
-            className="group bg-neutral-900 rounded-xl p-6 shadow-2xl flex flex-col md:flex-row gap-6 items-center border border-transparent hover:border-white h-[35vh] md:h-[50vh] w-[90vw] md:w-[40vw] mx-auto"
+            className="group bg-neutral-900 rounded-xl p-6 shadow-2xl flex flex-col md:flex-row gap-6 items-center border border-transparent hover:border-white h-[35vh] md:h-[50vh] w-[90vw] md:w-[40vw] mx-aut cursor-pointer"
           >
             <div className="flex-1">
               <h3 className="text-2xl font-semibold mb-2">
